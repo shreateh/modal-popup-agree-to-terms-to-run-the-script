@@ -1,0 +1,58 @@
+<!-- coded by https://shreateh.net/links -->
+<html>
+<head>
+    <title>shreateh.net/links</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.modal {    display: none;     position: fixed;     z-index: 1;     padding-top: 100px;     left: 0;    top: 0;    width: 100%;     height: 100%;     overflow: auto;     background-color: rgb(0,0,0);     background-color: rgba(0,0,0,0.4);} .modal-content {    background-color: #fefefe;    margin: auto;    padding: 20px;    border: 1px solid #888;    width: 80%;} .kclose {    color: #aaaaaa;    float: right;    font-size: 28px;    font-weight: bold;} .close:hover,.close:focus {    color: #000;    text-decoration: none;    cursor: pointer;}
+#kterm {
+height:30px;
+width:30px;
+position:relative;
+top:10px;
+}
+#kimg {
+  height:30px;
+  width:30px;
+  position:relative;
+  top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span style="color:blue">  Groups Handy Extension - Groups Auto Posts Delete and Member Ban  </span>   <span class="kclose">&times;</span>
+<div id="khalil_terms"><img src="https://khalil-shreateh.com/Applications/Downloadz/a-arrow.gif" id="kimg" />
+<input type="checkbox" id="kterm" /> I Agree With The <a href="https://khalil-shreateh.com/khalil.shtml/index.php/khalil-shreateh/terms-of-use.html" target="_blank">Terms of Use</a>
+</div><br/>
+<button style="background-color: #eb9316;"class="btn btn-warning" onclick="khalil()" id="kstart">Run The Extension</button></div>
+</div>
+
+<script>
+document.querySelector("#kimg").style.display="none";
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("kclose")[0];
+modal.style.display = "block";
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+	
+  function khalil(){
+  if(document.querySelector("#kterm").checked)
+  {alert('clicked');}
+else {document.querySelector("#kimg").style.display=""; alert("agree to terms!");}
+  }
+</script>
+  </body>
+</html>
